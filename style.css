@@ -37,3 +37,7 @@ main {
   height: 500px;
 }
 
+#rate-container {
+  display: flex;
+  gap: 5px;
+}
