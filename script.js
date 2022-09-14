@@ -14,12 +14,11 @@ function compare() {
 
 function loginAlert(confirmation) {
   if (confirmation === true) {
-   alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   } else {
-   alert('Email ou senha inválidos.');
+    alert('Email ou senha inválidos.');
   }
 }
-
 
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
