@@ -48,4 +48,4 @@ function charCounter(value) {
   }
 }
 
-charCounter(500);
+charCounter('');
