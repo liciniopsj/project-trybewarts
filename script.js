@@ -28,10 +28,10 @@ loginButton.addEventListener('click', (event) => {
   loginAlert(isAuthorized);
 });
 
-checkbox.onchange = function() {
-  if(this.checked){
+checkbox.onchange = function enableBtn() {
+  if (this.checked) {
     submitButton.disabled = false;
-} else {
+  } else {
     submitButton.disabled = true;
   }
-}
+};
