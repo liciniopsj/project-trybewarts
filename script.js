@@ -44,7 +44,7 @@ function charCounter(value) {
     diff = counter - total;
     document.getElementById('counter').innerHTML = diff;
   } else {
-    document.getElementById('textarea').value = value.substr(0, counter);
+    document.getElementById('textarea').value = value.toString().substring(0, counter);
   }
 }
 

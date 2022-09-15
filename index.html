@@ -116,7 +116,7 @@
                 </div>
             </div>
             <label id="text" class="textarea" for="">Deixe seu comentário:</label>
-            <textarea onkeyup="charCounter(this.value)" name="text" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            <textarea name="text" id="textarea" cols="30" rows="10" maxlength="500" oninput="charCounter(this.value)"></textarea>
             <span id="counter">500</span>
             <div>
             <input type="checkbox" name="" id="agreement">
