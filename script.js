@@ -1,8 +1,6 @@
 const loginButton = document.getElementById('loginButton');
 const checkbox = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
-// const comentaryArea = document.getElementById('textarea');
-// const charCounter = document.getElementById('counter');
 let isAuthorized = false;
 
 function compare() {
@@ -38,9 +36,11 @@ checkbox.onchange = function enableBtn() {
   }
 };
 
-function charCounter (value) {
-  counter = 500;
-  total = value.length;
+function charCounter(value) {
+  const counter = 500;
+  let total = value.length;
+  let diff;
+  
   if (total <= counter) {
     diff = counter - total;
     document.getElementById('counter').innerHTML = diff;
