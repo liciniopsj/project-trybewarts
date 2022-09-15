@@ -38,13 +38,12 @@ checkbox.onchange = function enableBtn() {
 
 function charCounter(value) {
   const counter = 500;
-  let total = value.length;
+  const total = value.length;
   let diff;
-  
   if (total <= counter) {
     diff = counter - total;
     document.getElementById('counter').innerHTML = diff;
   } else {
-    document.getElementById('textarea').value = value.substr(0,counter);
+    document.getElementById('textarea').value = value.substr(0, counter);
   }
 }
