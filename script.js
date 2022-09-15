@@ -1,6 +1,8 @@
 const loginButton = document.getElementById('loginButton');
 const checkbox = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
+// const comentaryArea = document.getElementById('textarea');
+// const charCounter = document.getElementById('counter');
 let isAuthorized = false;
 
 function compare() {
