@@ -8,19 +8,30 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  padding: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
 }
 
 header h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 main {
   display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 30px;
 }
 
 #evaluation-form {
@@ -29,15 +40,39 @@ main {
   flex-direction: column;
 }
 
-#divEmail #divName {
+label {
+  margin-bottom: 6px;
+}
+
+div input {
+  margin-bottom: 6px;
+}
+
+#rate-container {
   display: flex;
+  gap: 15px;
+}
+
+#textarea {
+  height: 250px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#rate-container {
+#submit-btn {
+  margin-top: 50px;
+}
+
+#image {
   display: flex;
-  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
 }
