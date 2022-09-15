@@ -115,8 +115,9 @@
                     <label class="form-check-label" for="">10</label>
                 </div>
             </div>
-            <label id="textarea" class="textarea" for="">Deixe seu comentário:</label>
-            <textarea name="text" id="text" cols="30" rows="10" maxlength="500"></textarea>
+            <label id="text" class="textarea" for="">Deixe seu comentário:</label>
+            <textarea onkeyup="charCounter(this.value)" name="text" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            <span id="counter">500</span>
             <div>
             <input type="checkbox" name="" id="agreement">
             <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
