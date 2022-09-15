@@ -37,14 +37,16 @@ checkbox.onchange = function enableBtn() {
   }
 };
 
-function charCounter (value) {
-  counter = 500;
-  total = value.length;
+function charCounter(value) {
+  const counter = 500;
+  const total = value.length;
+  let diff;
   if (total <= counter) {
     diff = counter - total;
     document.getElementById('counter').innerHTML = diff;
   } else {
-    document.getElementById('textarea').value = value.substr(0,counter);
+    document.getElementById('textarea').value = value.substr(0, counter);
   }
 }
 
+charCounter(500);
