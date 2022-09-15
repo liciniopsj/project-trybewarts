@@ -35,3 +35,14 @@ checkbox.onchange = function enableBtn() {
     submitButton.disabled = true;
   }
 };
+
+function charCounter (value) {
+  counter = 500;
+  total = value.length;
+  if (total <= counter) {
+    diff = counter - total;
+    document.getElementById('counter').innerHTML = diff;
+  } else {
+    document.getElementById('textarea').value = value.substr(0,counter);
+  }
+}
