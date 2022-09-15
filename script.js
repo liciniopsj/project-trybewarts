@@ -47,3 +47,5 @@ function charCounter(value) {
     document.getElementById('textarea').value = value.substr(0, counter);
   }
 }
+
+charCounter(500);
