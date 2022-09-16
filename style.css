@@ -55,6 +55,11 @@ div input {
 
 #textarea {
   height: 250px;
+  resize: none;
+}
+
+#counter {
+  text-align: end;
 }
 
 #trybewarts-forms-logo {

@@ -1,6 +1,9 @@
 const loginButton = document.getElementById('loginButton');
 const checkbox = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+counter.innerText = 500;
 let isAuthorized = false;
 
 function compare() {
@@ -36,16 +39,7 @@ checkbox.onchange = function enableBtn() {
   }
 };
 
-function charCounter(value) {
-  const counter = 500;
-  const total = value.length;
-  let diff;
-  if (total <= counter) {
-    diff = counter - total;
-    document.getElementById('counter').innerHTML = diff;
-  } else {
-    document.getElementById('textarea').value = value.toString().substring(0, counter);
-  }
-}
-
-charCounter('');
+textArea.addEventListener('input', () => {
+  const textAreaLength = textArea.value.length;
+  counter.innerText = 500 - textAreaLength;
+});
