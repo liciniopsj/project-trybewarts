@@ -27,6 +27,12 @@ header h1 {
   margin: 10px;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -34,10 +40,18 @@ main {
   margin-top: 30px;
 }
 
+#form-data {
+  display: none;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-right: 200px;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 label {
@@ -78,6 +92,10 @@ div input {
 
 footer {
   display: flex;
+  margin-top: auto;
+  height: 15%;
   justify-content: center;
-  margin: 30px;
+  width: 100%;
+  background-color: rgb(50, 167, 145);
+  color: white;
 }
