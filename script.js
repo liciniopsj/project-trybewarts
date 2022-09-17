@@ -54,7 +54,7 @@ function getFullName() {
 
 function getMailAndHome() {
   const studentEmail = document.getElementById('studentEmail');
-  const studentHouse = document.getElementById('studentHouse')
+  const studentHouse = document.getElementById('studentHouse');
   studentEmail.innerText = `Email: ${document.getElementById('input-email').value}`;
   studentHouse.innerText = `Casa: ${document.getElementById('house').value}`;
 }
